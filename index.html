@@ -7,7 +7,7 @@
 </head>
 <body>
   <header>
-    <h1>👋 Hi, I'm Orlan Reyes</h1>
+    <h1 id="typewriter"></h1>
     <p>Full-stack Developer | Laravel | React | Node.js</p>
   </header>
 
@@ -27,7 +27,7 @@
   <section id="experience">
     <h2>Experience</h2>
     <ul>
-      <li><strong>Fullstack Developer Team Leader</strong> – CodeSquirrel (2023–Present)</li>
+      <li><strong>Developer Team Leader</strong> – CodeSquirrel (2023–Present)</li>
       <li><strong>Full-stack Web Developer (Freelance)</strong> – Web Design Davao (2021–2023)</li>
       <li><strong>PHP Developer</strong> – EnfraUSA Solutions Inc. (2020–2021)</li>
       <li><strong>Team Lead Web Developer</strong> – Trade Dynamics Consulting (2017–2020)</li>
@@ -36,10 +36,23 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/reyesorlan/hrms-api">HRMS API</a></li>
-      <li><a href="https://github.com/reyesorlan/Laravel-with-default-authentication">Laravel Auth Starter</a></li>
-    </ul>
+    <div class="card-container">
+      <div class="card">
+        <h3>HRMS API</h3>
+        <p>Backend system for HR management</p>
+        <a href="https://github.com/reyesorlan/hrms-api">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Laravel Auth Starter</h3>
+        <p>Authentication starter kit</p>
+        <a href="https://github.com/reyesorlan/Laravel-with-default-authentication">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Kas Android App</h3>
+        <p>Mobile app project</p>
+        <a href="https://github.com/reyesorlan/kas-android">View Project</a>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
@@ -53,5 +66,7 @@
   <footer>
     <p>© 2026 Orlan Reyes</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
