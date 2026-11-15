@@ -2,64 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Orlan Reyes Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orlan Reyes | Senior Full Stack Developer &amp; Technical Team Lead</title>
+  <meta name="description" content="Orlan Jr. Ador Reyes, Senior Full Stack Developer, Technical Team Lead and AI-assisted engineering practitioner based in Bulacan, Philippines.">
+  <meta name="theme-color" content="#0b0d12">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <header>
-    <h1 id="typewriter"></h1>
-    <p>Full-stack Developer | Laravel | React | Node.js</p>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Orlan Reyes, home">orlan<span>.</span>dev</a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#home">// home</a>
+      <a href="#expertise">// expertise</a>
+      <a href="#work">// work</a>
+      <a href="#experience">// experience</a>
+      <a href="#contact">// contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+      <span aria-hidden="true">◐</span>
+    </button>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Senior Software Developer with 9+ years of experience in backend & frontend development. 
-       Skilled in PHP, Laravel, React.js, Node.js, and server management (AWS, Nginx, Ubuntu).</p>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Developer Team Leader</strong> – CodeSquirrel (2023–Present)</li>
-      <li><strong>Full-stack Web Developer (Freelance)</strong> – Web Design Davao (2021–2023)</li>
-      <li><strong>PHP Developer</strong> – EnfraUSA Solutions Inc. (2020–2021)</li>
-      <li><strong>Team Lead Web Developer</strong> – Trade Dynamics Consulting (2017–2020)</li>
-    </ul>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>HRMS API</h3>
-        <p>Backend system for HR management</p>
-        <a href="https://github.com/reyesorlan/hrms-api">View Project</a>
+  <main id="main">
+    <section id="home" class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Orlan Reyes<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="tagline">Senior Full Stack Developer, Technical Team Lead &amp; AI-assisted engineering.</p>
+      <p class="lead">
+        I build web applications, integrate third-party APIs, guide developers and keep the
+        infrastructure running. I also build Claude-powered tools and reusable skills that
+        help teams ship faster without giving up security or code quality.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn" href="Orlan_Reyes_CV.pdf" download>Download CV</a>
       </div>
-      <div class="card">
-        <h3>Laravel Auth Starter</h3>
-        <p>Authentication starter kit</p>
-        <a href="https://github.com/reyesorlan/Laravel-with-default-authentication">View Project</a>
+      <ul class="stats" aria-label="Highlights">
+        <li><strong>9+</strong><span>years building for the web</span></li>
+        <li><strong>4</strong><span>teams led or supported</span></li>
+        <li><strong>6+</strong><span>API platforms integrated</span></li>
+      </ul>
+    </section>
+
+    <section id="expertise" class="reveal">
+      <h2 class="section-title"><span>//</span> My Expertise</h2>
+      <div class="grid three">
+        <article class="panel">
+          <h3>Full Stack Development</h3>
+          <p>Laravel and CodeIgniter backends paired with React, Next.js, Vue.js and WordPress frontends, backed by MySQL.</p>
+          <ul class="tags"><li>PHP</li><li>Laravel</li><li>React</li><li>Next.js</li><li>Vue.js</li><li>TypeScript</li><li>Python</li></ul>
+        </article>
+        <article class="panel">
+          <h3>AI-Assisted Engineering</h3>
+          <p>Internal tools built on Claude, automated code review workflows and organization-wide Claude skills, with security in mind.</p>
+          <ul class="tags"><li>Claude</li><li>Code review tooling</li><li>Reusable skills</li><li>Secure AI workflows</li></ul>
+        </article>
+        <article class="panel">
+          <h3>DevOps &amp; Leadership</h3>
+          <p>UAT and production setup, CI/CD, mentoring, estimation, scoping and technical interviews.</p>
+          <ul class="tags"><li>GitLab CI/CD</li><li>Nginx</li><li>Ubuntu</li><li>AWS</li><li>Mentoring</li></ul>
+        </article>
       </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📍 San Ildefonso, Bulacan</p>
-    <p>📱 0961‑254‑4882</p>
-    <p>📧 <a href="mailto:reyesorlan17@yahoo.com">reyesorlan17@yahoo.com</a></p>
-    <p>🔗 <a href="https://github.com/reyesorlan">GitHub Profile</a></p>
-  </section>
+      <h3 class="subhead">Integrations</h3>
+      <ul class="tags big">
+        <li>HubSpot</li><li>Stripe</li><li>Airtable</li><li>Nookal</li><li>Business 360</li><li>Google APIs</li>
+      </ul>
 
-  <footer>
-    <p>© 2026 Orlan Reyes</p>
+      <blockquote class="quote">
+        “Good code is reviewed, secure and boring. AI just helps me get there faster.”
+      </blockquote>
+    </section>
+
+    <section id="work" class="reveal">
+      <h2 class="section-title"><span>//</span> My Work</h2>
+      <p class="muted">A few public projects. Much of my client work lives in private repositories.</p>
+      <div class="grid two">
+        <a class="card" href="https://github.com/reyesorlan/hrms-api" target="_blank" rel="noopener">
+          <span class="card-cat">Backend / API</span>
+          <h3>HRMS API</h3>
+          <p>Backend system for HR management.</p>
+          <span class="card-link">Show project →</span>
+        </a>
+        <a class="card" href="https://github.com/reyesorlan/Laravel-with-default-authentication" target="_blank" rel="noopener">
+          <span class="card-cat">Laravel</span>
+          <h3>Laravel Auth Starter</h3>
+          <p>Authentication starter kit built on Laravel's defaults.</p>
+          <span class="card-link">Show project →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h2 class="section-title"><span>//</span> Professional Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Senior Developer Team Lead / Senior Full Stack Developer</h3>
+            <p class="company">CodeSquirrel <span class="muted">(absorbed by client from Web Design Davao)</span></p>
+            <p class="date">March 2023 – Present</p>
+          </div>
+          <ul>
+            <li>Build web applications from scratch or internal templates with Laravel, Next.js, React.js and WordPress.</li>
+            <li>Integrate HubSpot, Stripe, Airtable, Nookal, Business 360 and Google APIs.</li>
+            <li>Build internal Claude-powered developer tools, automated code review workflows and reusable skills used across the organization.</li>
+            <li>Review solutions, mentor developers, run code reviews and maintain reusable backend and frontend templates.</li>
+            <li>Set up and maintain UAT and production servers (Nginx, Ubuntu) and GitLab CI/CD readiness.</li>
+            <li>Support project managers with estimation and scoping, reassign work by priority, and take part in technical interviews.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Full Stack Web Developer (Freelance)</h3>
+            <p class="company">Web Design Davao</p>
+            <p class="date">May 2021 – March 2023</p>
+          </div>
+          <ul>
+            <li>Developed and maintained websites using Laravel, React.js and WordPress plugins.</li>
+            <li>Fixed bugs and maintained native Android applications.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>PHP Developer</h3>
+            <p class="company">EnfraUSA Solution Inc.</p>
+            <p class="date">February 2020 – June 2021</p>
+          </div>
+          <ul>
+            <li>Developed and maintained multiple websites.</li>
+            <li>Built automation tools and reporting websites for operational workflows.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Team Lead Web Developer</h3>
+            <p class="company">Trade Dynamics Consulting International Corporation</p>
+            <p class="date">July 2017 – February 2020</p>
+          </div>
+          <ul>
+            <li>Delegated tasks, estimated delivery effort and evaluated team performance with an internal scoring process.</li>
+            <li>Handled AWS tasks, database configuration and development environment provisioning.</li>
+            <li>Built and maintained web and mobile applications, including APIs for mobile apps.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <h3 class="subhead">Education</h3>
+      <ul class="edu">
+        <li><strong>BS Information Technology</strong> · Bulacan State University, Malolos, Bulacan <span class="muted">2013–2017</span></li>
+        <li><strong>Computer Science NC II</strong> · InfoTech Institute of Arts and Science, Pasig City <span class="muted">2010–2012</span></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2 class="section-title"><span>//</span> Contact</h2>
+      <p class="contact-lead">Open to new opportunities and interesting projects.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:reyesorlan17@yahoo.com">reyesorlan17@yahoo.com</a></li>
+        <li><span>Phone</span><a href="tel:+639612544882">0961 254 4882</a></li>
+        <li><span>GitHub</span><a href="https://github.com/reyesorlan" target="_blank" rel="noopener">github.com/reyesorlan</a></li>
+        <li><span>Location</span>San Ildefonso, Bulacan, Philippines</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Orlan Jr. Ador Reyes. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
   </footer>
 
   <script src="script.js"></script>
